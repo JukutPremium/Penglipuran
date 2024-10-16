@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Penglipuran</title>
+    <link rel="icon" href="assets/fav.png" type="image/gif/png">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"/>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollToPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style/style.css" />
+    <script src="js/preloader.js"></script>
+    <style>
+            @import url("https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&display=swap");     
+        
+        h1, h2 {
+            color: #3c6c52;
+        }
+        
+        .card {
+            transition: transform 0.3s;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .btn-primary {
+            background-color: #3c6c52;
+            border-color: #3c6c52;
+        }
+        
+        .btn-primary:hover {
+            background-color: #2a4e3a;
+            border-color: #2a4e3a;
+        }
+    </style>
+  </head>
+
+  <body class="preloader-active">
+    <div class="preloader">
+      <div class="logo-container">
+        <img src="assets/LP.png" alt="Logo" class="preloader-logo" />
+        <div class="loading-text text-center" id="welcome"></div>
+      </div>
+    </div>
+
+
+      <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+          <div class="container d-flex justify-content-between align-items-center">
+              <!-- For Mobile -->
+              <a class="navbar-toggler mx-auto" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="text-decoration: none; border: none;">
+                  <p style="color: white; font-weight: bold;" class="nav-link m-0">— PENGLIPURAN —</p>
+              </a>
+              <!-- Navbar Links -->
+              <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav mx-auto text-center" >
+                      <li class="nav-item"></li>
+                          <a class="nav-link px-3 mbabout" href="#about" style="color: #efefef; font-weight: bold;">About</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link px-3" href="index.html" style="color: rgb(239, 239, 239); font-weight: bold;">Home</a>
+                      </li>
+                      <li class="nav-item pcabout" id="logoPenglipuran" >
+                          <a onClick="" class="nav-link px-3" href="#event_page" style="color: rgb(239, 239, 239); font-weight: bold;">— Penglipuran —</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link px-3" href="#gallery" style="color: rgb(239, 239, 239); font-weight: bold;">Gallery</a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
+      
+    <!-- Home Page Video Background -->
+    <div class="video-landingpage">
+      <div class="video-container" style="height: 100vh; background-repeat: no-repeat; background-size: cover; filter: brightness(40%); background-position: center; background-image: url(assets/penglipuran.jpg);">
+      </div>
+    </div>
+
+
+    <!-- Home Page Logo -->
+      <div class="hero-container">
+        <div class="image-section">
+          <img src="assets/EL.png" class="img-fluid">
+        </div>
+      </div>
+  
+
+      <div class="container my-5" id="event_page">
+        <h1 class="text-center mb-5" id="event"></h1>
+        
+        <div class="row mb-4">
+            <div class="col-md-6 mb-3">
+                <input type="text" class="form-control" id="searchInput" placeholder="Search events...">
+            </div>
+            <div class="col-md-6">
+                <select class="form-select" id="sortSelect" aria-label="Sort by category">
+                    <option selected value="all">Sort by category</option>
+                    <option value="Cultural">Cultural</option>
+                    <option value="Traditional">Traditional</option>
+                    <option value="Religious">Religious</option>
+                    <option value="Community">Community</option>
+                </select>
+            </div>
+        </div>
+        <div class="row" id="eventContainer">
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://placehold.co/600x400" class="card-img-top" alt="Event 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Ngusaba Ceremony</h5>
+                        <p class="card-text">Annual village purification ceremony held in Penglipuran.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://placehold.co/600x400" class="card-img-top" alt="Event 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Traditional Crafts Workshop</h5>
+                        <p class="card-text">Annual village purification ceremony held in Penglipuran.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://placehold.co/600x400" class="card-img-top" alt="Event 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Penglipuran Village Festival</h5>
+                        <p class="card-text">Annual celebration showcasing local culture and traditions.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Footer -->
+     
+    <footer class="footer mt-5">
+      <div class="container"> 
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 d-flex flex-column align-items-start justify-content-center mb-md-0">
+                <img src="assets/LH.png" alt="Logo" style="width: 120px;" class="mb-3">
+                
+                <p class="mb-3 text-start">
+                  Selamat datang di <b>Desa Penglipuran</b>, desa adat di Bali yang memadukan keindahan alam dan budaya tradisional. Nikmati suasana asri, jalanan bersih, dan kearifan lokal yang masih terjaga. Kunjungi kami untuk merasakan ketenangan, keramahan, dan keunikan budaya Bali yang autentik.
+                </p>
+                
+                <a href="contact.html" class="btn" style="background-color: #efefef; margin-bottom: 1rem;
+                ">Contact Us</a>
+              </div>
+              <div class="col-md-6">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3946.7822921120646!2d115.3614314!3d-8.4230293!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd2196c75ecf3af%3A0xf50b15e1cbf3bd1b!2sJl.%20Penglipuran%2C%20Kubu%2C%20Kec.%20Bangli%2C%20Kabupaten%20Bangli%2C%20Bali!5e0!3m2!1sid!2sid!4v1728883441380!5m2!1sid!2sid" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+            </div>
+            <p class="pt-3">&copy; Copyright by ThePixelWebsmith.</p>
+          </div>
+        </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="./js/anime.js"></script>
+    <script src="./js/typed.js"></script>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/index.js"></script>
+    <script>
+        const events = [
+            {
+                title: "Ngusaba Ceremony",
+                description: "Annual village purification ceremony held in Penglipuran.",
+                image: "https://placehold.co/600x400",
+                category: "Religious"
+            },
+            {
+                title: "Traditional Crafts Workshop",
+                description: "Learn about Balinese crafts from local artisans.",
+                image: "https://placehold.co/600x400",
+                category: "Cultural"
+            },
+            {
+                title: "Penglipuran Village Festival",
+                description: "Annual celebration showcasing local culture and traditions.",
+                image: "https://placehold.co/600x400",
+                category: "Community"
+            },
+            {
+                title: "Balinese Dance Performance",
+                description: "Experience traditional Balinese dances performed by local artists.",
+                image: "https://placehold.co/600x400",
+                category: "Traditional"
+            },
+            {
+                title: "Community Clean-up Day",
+                description: "Join locals in keeping Penglipuran clean and beautiful.",
+                image: "https://placehold.co/600x400",
+                category: "Community"
+            },
+            {
+                title: "Galungan Celebration",
+                description: "Witness the Balinese Hindu celebration of good triumphing over evil.",
+                image: "https://placehold.co/600x400",
+                category: "Religious"
+            }
+        ];
+
+        function createEventCard(event) {
+            return `
+                <div class="col-md-4 mb-4 event-card" data-category="${event.category}">
+                    <div class="card">
+                        <img src="${event.image}" class="card-img-top" alt="${event.title}">
+                        <div class="card-body">
+                            <h5 class="card-title">${event.title}</h5>
+                            <p class="card-text">${event.description}</p>
+                            <a href="#" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+
+        function renderEvents(eventsToRender) {
+            const eventContainer = document.getElementById('eventContainer');
+            eventContainer.innerHTML = eventsToRender.map(createEventCard).join('');
+        }
+
+        renderEvents(events);
+
+        const searchInput = document.getElementById('searchInput');
+        searchInput.addEventListener('input', function() {
+            const searchTerm = this.value.toLowerCase();
+            const filteredEvents = events.filter(event => 
+                event.title.toLowerCase().includes(searchTerm) || 
+                event.description.toLowerCase().includes(searchTerm)
+            );
+            renderEvents(filteredEvents);
+        });
+
+        const sortSelect = document.getElementById('sortSelect');
+        sortSelect.addEventListener('change', function() {
+            const selectedCategory = this.value;
+            let sortedEvents;
+            if (selectedCategory === 'all') {
+                sortedEvents = events;
+            } else {
+                sortedEvents = events.filter(event => event.category === selectedCategory);
+            }
+            renderEvents(sortedEvents);
+        });
+    </script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

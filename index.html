@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Penglipuran</title>
+    <link rel="icon" href="assets/fav.png" type="image/gif/png">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"/>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollToPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style/style.css" />
+    <script src="js/preloader.js"></script>
+  </head>
+
+  <body class="preloader-active">
+    <div class="preloader">
+      <div class="logo-container">
+        <img src="assets/LP.png" alt="Logo" class="preloader-logo" />
+        <div class="loading-text text-center" id="welcome"></div>
+      </div>
+    </div>
+
+
+      <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+          <div class="container d-flex justify-content-between align-items-center">
+              <!-- For Mobile -->
+              <a class="navbar-toggler mx-auto" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="text-decoration: none; border: none;">
+                  <p style="color: white; font-weight: bold;" class="nav-link m-0">— PENGLIPURAN —</p>
+              </a>
+              <!-- Navbar Links -->
+              <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav mx-auto text-center" >
+                      <li class="nav-item"></li>
+                          <a class="nav-link px-3 mbabout" href="#about" style="color: #efefef; font-weight: bold;">About</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link px-3" href="#" style="color: rgb(239, 239, 239); font-weight: bold;">Home</a>
+                      </li>
+                      <li class="nav-item pcabout">
+                          <a id="logoPenglipuran" class="nav-link px-3" href="#about" style="color: rgb(239, 239, 239); font-weight: bold;">— Penglipuran —</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link px-3" href="jadwal.html" style="color: rgb(239, 239, 239); font-weight: bold;">Acara</a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
+      
+    <!-- Home Page Video Background -->
+    <div class="video-landingpage">
+      <div class="video-container" style="height: 100vh; background-repeat: no-repeat; background-size: cover; filter: brightness(40%); background-position: center; background-image: url(assets/penglipuran.jpg);">
+      </div>
+    </div>
+
+
+    <!-- Home Page Logo -->
+      <div class="hero-container">
+        <div class="image-section">
+          <img src="assets/LP.png" class="img-fluid">
+        </div>
+      </div>
+  
+    <!-- About Us -->
+
+    <section id="about" class="about-us">
+      <div class="container">
+
+      <h2 class="text-center mb-5 about-title" id="about-title"
+      ></h2>
+      <p class="lead text-center" id="about-desc" data-aos="fade-up">Penglipuran adalah desa adat di Kabupaten Bangli, Bali, yang terkenal sebagai tujuan wisata karena masyarakatnya yang masih melestarikan budaya tradisional Bali. Arsitektur dan pengelolaan lahan di desa ini mengikuti konsep Tri Hita Karana, yang mengedepankan keseimbangan hubungan antara Tuhan, manusia, dan lingkungan. Penglipuran juga dinobatkan sebagai salah satu desa terbersih di dunia dan telah meraih penghargaan, seperti Kalpataru dan Indonesia Sustainable Tourism Award (ISTA) 2017, serta masuk dalam Top 100 Destinasi Berkelanjutan versi Green Destinations Foundation.</p>
+
+      </div>
+    </section>
+
+
+    <!-- Preview -->
+    <section class="gallery" id="gallery">
+      <div class="container">
+        <h2 class="text-center mb-4" id="daya_tarik"></h2>
+        <p style="color: white; font-size: small" class="text-center fs-4 mb-5" data-aos="fade-up">Rasakan keunikan Desa Penglipuran, di mana keindahan budaya Bali berpadu dengan suasana tenang dan asri. Dikelilingi pemandangan hijau, nikmati udara segar serta ketenangan yang menyegarkan jiwa di setiap sudut desa ini.</p>
+        <div class="row"> 
+          <div class="col-lg-4 col-md-6 col-sm-6 col-12 mb-4" >
+            <div class="card border-0">
+              <div class="position-relative">
+                <img src="assets/arsitektur.png" class="card-img-top" alt="Arsitketur"/>
+                <div class="card-img-overlay d-flex flex-column justify-content-end bg-dark bg-opacity-50 text-white p-3 overlay-hover">
+                  <div class="d-flex flex-column align-items-center">
+                    <h5 class="card-title">Arsitektur</h5>  
+                    <p class="card-text text-center">Desa Penglipuran dikenal dengan tata letak yang teratur dan simetris. Jalan utama desa membentang lurus dari utara ke selatan, dengan rumah-rumah tradisional yang tersusun rapi di kiri dan kanan jalan.
+                     Jalan desa dibuat agak menanjak, yang memberikan pandangan lebih luas dari ujung desa ke ujung lainnya.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-6 col-12 mb-4">
+            <div class="card border-0">
+              <div class="position-relative">
+                <img src="assets/loloh.png" class="card-img-top" alt="Best Seller 1" />
+                <div
+                  class="card-img-overlay d-flex flex-column justify-content-end bg-dark bg-opacity-50 text-white p-3 overlay-hover">
+                  <div class="d-flex flex-column align-items-center">
+                    <h5 class="card-title">Loloh Cem-Cem</h5>
+                    <p class="card-text text-center">tan bambu di Desa Penglipuran merupakan salah satu daya tarik alam dan budaya yang sangat ikonik. Hutan ini terletak di bagian utara desa dan menempati sekitar 40% dari total luas wilayah Desa Penglipuran. Hutan bambu menjadi salah satu tempat favorit bagi wisatawan yang berkunjung ke Desa Penglipuran. Selain keindahan visualnya, suasana tenang dan udara segar di hutan bambu memberikan pengalaman yang berbeda dari suasana perkotaan.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-6 col-12 mb-4" >
+            <div class="card border-0">
+              <div class="position-relative">
+                <img src="https://placehold.co/703x677" class="card-img-top" alt="Best Seller 1" />
+                <div class="card-img-overlay d-flex flex-column justify-content-end bg-dark bg-opacity-50 text-white p-3 overlay-hover">
+                  <div class="d-flex flex-column align-items-center">
+                   <h5 class="card-title">Ngusaba</h5>
+                    <p class="card-text text-center">Upacara Ngusaba di Desa Penglipuran merupakan salah satu ritual adat yang penting dan menjadi bagian dari tradisi keagamaan masyarakat setempat. Upacara ini adalah bentuk persembahan dan ungkapan syukur kepada Ida Sang Hyang Widhi Wasa (Tuhan Yang Maha Esa) serta roh leluhur atas hasil panen dan kelimpahan yang diberikan.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-lg-4 col-md-6 col-sm-6 col-12 mb-4" >
+            <div class="card border-0">
+              <div class="position-relative">
+                <img src="https://placehold.co/703x677" class="card-img-top" alt="Best Seller 1"/>
+                <div class="card-img-overlay d-flex flex-column justify-content-end bg-dark bg-opacity-50 text-white p-3 overlay-hover">
+                  <div class="d-flex flex-column align-items-center">
+                    <h5 class="card-title">Tri Mandala</h5>
+                    <p class="card-text text-center">Tata ruang rumah di Desa Penglipuran mengikuti konsep Tri Mandala, yang membagi ruang menjadi tiga bagian sesuai tingkat kesucian yakni Utama Mandala (Area paling dalam rumah), Madya Mandala (Area tengah rumah), dan Nista Mandala (Area paling luar atau depan rumah).</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-6 col-12 mb-4" >
+            <div class="card border-0">
+              <div class="position-relative">
+                <img src="https://placehold.co/703x677" class="card-img-top" alt="Best Seller 1"/>
+                <div class="card-img-overlay d-flex flex-column justify-content-end bg-dark bg-opacity-50 text-white p-3 overlay-hover">
+                  <div class="d-flex flex-column align-items-center">
+                    <h5 class="card-title">Angkul-Angkul</h5>
+                    <p class="card-text text-center">Angkul-angkul adalah gerbang atau pintu masuk tradisional yang menjadi ciri khas arsitektur rumah di Desa Penglipuran. Angkul-angkul berfungsi sebagai pintu utama yang menghubungkan halaman rumah dengan jalan desa. Struktur ini memiliki bentuk dan desain yang seragam di seluruh rumah di desa, mencerminkan keselarasan dan keteraturan tata ruang di Desa Penglipuran.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-6 col-12 mb-4" >
+            <div class="card border-0">
+              <div class="position-relative">
+                <img src="assets/jalanPenglipuran.png" class="card-img-top" alt="Desa Tebersih"/>
+                <div class="card-img-overlay d-flex flex-column justify-content-end bg-dark bg-opacity-50 text-white p-3 overlay-hover" >
+                  <div class="d-flex flex-column align-items-center">
+                   <h5 class="card-title">Desa Terbersih</h5>
+                    <p class="card-text text-center">Berkat kebersihan dan kerapiannya, desa wisata yang terletak di Bangli ini juga berhasil menyabet beberapa penghargaan diantaranya Kalpataru, ISTA (Indonesia Sustainable Tourism Award) pada tahun 2017, dan yang terbaru, destinasi ini masuk dalam Sustainable Destinations Top 100 versi Green Destinations Foundation.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- FAQ Section -->
+    <section class="py-5 faq" style="background-color: #f8f9fa">
+      <div class="container">
+        <h2 class="text-center mb-5 faq-margin" >Frequently Questions</h2>
+        <div class="accordion" id="faqAccordion">
+
+          <!-- FAQ Item 1 -->
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"><b>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem fugit rerum minima ?</b>
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut qui nisi consequatur, consequuntur expedita eius. Libero quia voluptates voluptatum, nulla culpa perspiciatis ad error sed labore repudiandae nihil reprehenderit eum.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ Item 2 -->
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"><b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem fugit rerum minima ?</b>
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque obcaecati praesentium error ipsum possimus? Dolorem iste sequi, omnis veniam pariatur dignissimos nostrum totam beatae asperiores. Veniam quo et facilis odit!
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ Item 3 -->
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFour">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour"><b>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem fugit rerum minima ?</b>
+              </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt facere similique natus ipsum eveniet quo quae perferendis, voluptas quaerat praesentium et exercitationem fuga explicabo? Sequi reiciendis cumque veniam ex excepturi.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+     
+    <footer class="footer mt-5">
+      <div class="container"> 
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 d-flex flex-column align-items-start justify-content-center mb-md-0">
+                <img src="assets/LH.png" alt="Logo" style="width: 120px;" class="mb-3">
+                
+                <p class="mb-3 text-start">
+                  Selamat datang di <b>Desa Penglipuran</b>, desa adat di Bali yang memadukan keindahan alam dan budaya tradisional. Nikmati suasana asri, jalanan bersih, dan kearifan lokal yang masih terjaga. Kunjungi kami untuk merasakan ketenangan, keramahan, dan keunikan budaya Bali yang autentik.
+                </p>
+                
+                <a href="contact.html" class="btn" style="background-color: #efefef; margin-bottom: 1rem;
+                ">Contact Us</a>
+              </div>
+              <div class="col-md-6">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3946.7822921120646!2d115.3614314!3d-8.4230293!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd2196c75ecf3af%3A0xf50b15e1cbf3bd1b!2sJl.%20Penglipuran%2C%20Kubu%2C%20Kec.%20Bangli%2C%20Kabupaten%20Bangli%2C%20Bali!5e0!3m2!1sid!2sid!4v1728883441380!5m2!1sid!2sid" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+            </div>
+            <p class="pt-3">&copy; Copyright by ThePixelWebsmith.</p>
+          </div>
+        </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="./js/anime.js"></script>
+    <script src="./js/typed.js"></script>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/index.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
