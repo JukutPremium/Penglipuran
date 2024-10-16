@@ -90,13 +90,13 @@
     <!-- Home Page Logo -->
       <div class="hero-container">
         <div class="image-section">
-          <img src="assets/EL.png" class="img-fluid">
+          <img src="assets/FL.png" class="img-fluid">
         </div>
       </div>
   
 
-      <div class="container my-5" id="event_page">
-        <h1 class="text-center mb-5" id="event"></h1>
+      <div class="container my-5" id="fasilitas_page">
+        <h1 class="text-center mb-5" id="fasilitas"></h1>
         
         <div class="row mb-4">
             <div class="col-md-6 mb-3">
@@ -105,10 +105,8 @@
             <div class="col-md-6">
                 <select class="form-select" id="sortSelect" aria-label="Sort by category">
                     <option selected value="all">Sort by category</option>
-                    <option value="Cultural">Cultural</option>
-                    <option value="Traditional">Traditional</option>
-                    <option value="Religious">Religious</option>
-                    <option value="Community">Community</option>
+                    <option value="Fasilitas Umum">Fasilitas Umum</option>
+                    <option value="Akomodasi">Akomodasi</option>
                 </select>
             </div>
         </div>
@@ -118,8 +116,8 @@
                 <div class="card">
                     <img src="https://placehold.co/600x400" class="card-img-top" alt="Event 1">
                     <div class="card-body">
-                        <h5 class="card-title">Ngusaba Ceremony</h5>
-                        <p class="card-text">Annual village purification ceremony held in Penglipuran.</p>
+                        <h5 class="card-title">Guest House Desa</h5>
+                        <p class="card-text">Guest house desa Penglipuran.</p>
                         <a href="#" class="btn btn-primary">Learn More</a>
                     </div>
                 </div>
@@ -128,23 +126,12 @@
                 <div class="card">
                     <img src="https://placehold.co/600x400" class="card-img-top" alt="Event 2">
                     <div class="card-body">
-                        <h5 class="card-title">Traditional Crafts Workshop</h5>
-                        <p class="card-text">Annual village purification ceremony held in Penglipuran.</p>
+                        <h5 class="card-title">Areal parking kendaraan</h5>
+                        <p class="card-text">Areal parkir untuk wisatawan.</p>
                         <a href="#" class="btn btn-primary">Learn More</a>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <img src="https://placehold.co/600x400" class="card-img-top" alt="Event 3">
-                    <div class="card-body">
-                        <h5 class="card-title">Penglipuran Village Festival</h5>
-                        <p class="card-text">Annual celebration showcasing local culture and traditions.</p>
-                        <a href="#" class="btn btn-primary">Learn More</a>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
     </div>
 
@@ -183,40 +170,16 @@
     <script>
         const events = [
             {
-                title: "Ngusaba Ceremony",
-                description: "Annual village purification ceremony held in Penglipuran.",
+                title: "Guest House Desa",
+                description: "Guest house desa Penglipuran.",
                 image: "https://placehold.co/600x400",
-                category: "Religious"
+                category: "Akomodasi"
             },
             {
-                title: "Traditional Crafts Workshop",
-                description: "Learn about Balinese crafts from local artisans.",
+                title: "Areal parking kendaraan",
+                description: "Areal parkir untuk wisatawan.",
                 image: "https://placehold.co/600x400",
-                category: "Cultural"
-            },
-            {
-                title: "Penglipuran Village Festival",
-                description: "Annual celebration showcasing local culture and traditions.",
-                image: "https://placehold.co/600x400",
-                category: "Community"
-            },
-            {
-                title: "Balinese Dance Performance",
-                description: "Experience traditional Balinese dances performed by local artists.",
-                image: "https://placehold.co/600x400",
-                category: "Traditional"
-            },
-            {
-                title: "Community Clean-up Day",
-                description: "Join locals in keeping Penglipuran clean and beautiful.",
-                image: "https://placehold.co/600x400",
-                category: "Community"
-            },
-            {
-                title: "Galungan Celebration",
-                description: "Witness the Balinese Hindu celebration of good triumphing over evil.",
-                image: "https://placehold.co/600x400",
-                category: "Religious"
+                category: "Fasilitas Umum"
             }
         ];
 
@@ -268,4 +231,4 @@
       AOS.init();
     </script>
   </body>
-</html>
+  </html>

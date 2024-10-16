@@ -1,59 +1,98 @@
+document.addEventListener('DOMContentLoaded', function () {
+  var welcomeTyped = new Typed("#welcome", {
+    strings: ['— WELCOME —'],
+    typeSpeed: 200,
+    backSpeed: 150,
+    showCursor: false,
+    loop: false,
+  });
+});
+
 let aboutTriggered = false;
-window.addEventListener('scroll', function () {
-  const aboutSection = document.getElementById('about');
-  const aboutPosition = aboutSection.getBoundingClientRect().top;
-  if (aboutPosition < window.innerHeight && !aboutTriggered) {
-    aboutTriggered = true; 
-    var typed = new Typed("#about-title", {
-      strings: ['Tentang Penglipuran.'],
-      typeSpeed: 150,
-      backSpeed: 150,
-      // startDelay: 500,
-      showCursor: false,
-      loop: false,
-    })
-  }
-});
-
-var typed = new Typed("#welcome", {
-  strings: ['— WELCOME —'],
-  typeSpeed: 200,
-  backSpeed: 150,
-  showCursor: false,
-  loop: false,
-});
-
 let galleryTriggered = false;
-window.addEventListener('scroll', function () {
-  const gallerytSection = document.getElementById('gallery');
-  const galleryPosition = gallerytSection.getBoundingClientRect().top;
-  if (galleryPosition < window.innerHeight && !galleryTriggered) {
-    galleryTriggered = true; 
-var dayaTarik = new Typed("#daya_tarik", {
-  strings: ['Budaya Lokal.'],
-  typeSpeed:200,
-  backSpeed: 150,
-  showCursor: false,
-  loop: false,
-    })
-  }
-});
-
 let eventTriggered = false;
-window.addEventListener('scroll', function () {
-  const eventtSection = document.getElementById('event_page');
-  const eventPosition = eventtSection.getBoundingClientRect().top; // dah ?
-  if (eventPosition < window.innerHeight && !eventTriggered) {
-    eventTriggered = true; 
-var event = new Typed("#event", {
-  strings: ['Upcoming Events in Penglipuran.'],
-  typeSpeed:200,
-  backSpeed: 150,
-  showCursor: false,
-  loop: false,
-    })
+let fasilitasTriggered = false;
+
+function handleScrollTriggers() {
+  // About Section
+  if (!aboutTriggered) {
+    const aboutSection = document.getElementById('about');
+    if (aboutSection) {
+      const aboutPosition = aboutSection.getBoundingClientRect().top;
+      if (aboutPosition < window.innerHeight) {
+        aboutTriggered = true;
+        new Typed("#about-title", {
+          strings: ['Tentang Penglipuran.'],
+          typeSpeed: 75,
+          backSpeed: 150,
+          showCursor: false,
+          loop: false,
+        });
+      }
+    }
   }
-})
+
+  // Gallery Section
+  if (!galleryTriggered) {
+    const gallerySection = document.getElementById('gallery');
+    if (gallerySection) {
+      const galleryPosition = gallerySection.getBoundingClientRect().top;
+      if (galleryPosition < window.innerHeight) {
+        galleryTriggered = true;
+        new Typed("#daya_tarik", {
+          strings: ['Daya Tarik.'],
+          typeSpeed: 75,
+          backSpeed: 150,
+          showCursor: false,
+          loop: false,
+        });
+      }
+    }
+  }
+
+  // Event Section
+  if (!eventTriggered) {
+    const eventSection = document.getElementById('event_page');
+    if (eventSection) {
+      const eventPosition = eventSection.getBoundingClientRect().top;
+      if (eventPosition < window.innerHeight) {
+        eventTriggered = true;
+        new Typed("#event", {
+          strings: ['Acara Mendatang di Penglipuran.'],
+          typeSpeed: 75,
+          backSpeed: 150,
+          showCursor: false,
+          loop: false,
+        });
+      }
+    }
+  }
+
+  // Fasilitas Section
+  if (!fasilitasTriggered) {
+    const fasilitasSection = document.getElementById('fasilitas_page');
+    if (fasilitasSection) {
+        const fasilitasPosition = fasilitasSection.getBoundingClientRect().top;
+        if (fasilitasPosition < window.innerHeight) {
+            fasilitasTriggered = true;
+            new Typed("#fasilitas", {
+                strings: ['Fasilitas Yang ada di Penglipuran.'],
+                typeSpeed: 75,
+                backSpeed: 150,
+                showCursor: false,
+                loop: false,
+            });
+        }
+    }
+}
+
+  if (aboutTriggered && galleryTriggered && eventTriggered) {
+    window.removeEventListener('scroll', handleScrollTriggers);
+  }
+}
+
+window.addEventListener('scroll', handleScrollTriggers);
+handleScrollTriggers();
 
 
 
