@@ -314,8 +314,9 @@ html {
   }
 }
 
-@media screen (max-width: 992px) {
+@media (max-width: 992px) {
   .navbar {background: var(--green);
+}
 }
   
 

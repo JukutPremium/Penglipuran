@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
       delay: 3600,
     });
     anime({
-      targets: ".nav-item:nth-child(3)", // Right nav link
+      targets: ".nav-item:nth-child(1)", // Right nav link
       translateX: [100, 0], // Start from right and move to center
       opacity: [0, 1],
       easing: "easeOutExpo",
