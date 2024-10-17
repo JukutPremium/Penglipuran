@@ -1,10 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&display=swap");
 
-
-/* :root {
-  --green: "#3c6c52"
-} */
-
 * {
   margin: 0;
   padding: 0;
@@ -21,9 +16,7 @@ body {
   font-family: "Arial", sans-serif;
 }
 
-
 /* Nav Bar */
-
 .navbar {
   position: fixed;
   width: 100%;
@@ -113,7 +106,7 @@ html {
   overflow-x: hidden;
 }
 
-/* Hero*/
+/* Hero */
 .hero-container {
   position: absolute;
   top: 55%;
@@ -153,7 +146,6 @@ html {
 }
 
 /* About Us */
-
 .about-us {
   padding: 15rem 15px; 
 }
@@ -170,8 +162,7 @@ html {
   color: #333;
 }
 
-/* galery */
-
+/* Gallery */
 .gallery {
   height: 100%;
   width: 100vw;
@@ -184,21 +175,48 @@ html {
   color: white;
   margin-bottom: 40px;
 }
+
 .gallery p {
   font-size: 20px;
 }
 
-.card-img-overlay {
+.gallery .card-img-overlay {
   opacity: 0;
   transition: opacity 0.8s;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 1rem;
 }
 
-.position-relative:hover .card-img-overlay {
+.gallery .position-relative:hover .card-img-overlay {
   opacity: 0.8;
 }
 
-/* FAQ */
+.gallery .position-relative {
+  height: 100%;
+}
 
+.gallery .card-img-top {
+  height: 100%;
+  object-fit: cover;
+}
+
+.gallery .card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.gallery .card-text {
+  font-size: 0.9rem;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+}
+
+/* FAQ */
 .faq h2 {
   font-size: 48px;
   color: #3c6c52;
@@ -232,11 +250,10 @@ html {
 }
 
 /* Footer */
-
 .footer {
-  
   text-align: center;
 }
+
 .footer a {
   color: #6c757d;
   text-decoration: none;
@@ -275,6 +292,46 @@ html {
   .about-us p {
     font-size: 20px; 
   }
+
+  .gallery .card-title {
+    font-size: 1.3rem;
+  }
+
+  .gallery .card-text {
+    font-size: 0.8rem;
+    -webkit-line-clamp: 4;
+  }
+}
+
+@media (max-width: 576px) {
+  .nav-link::after {
+    display: none;
+  }
+
+  .gallery p {
+    font-size: 20px; 
+  }
+
+  .about-us h2 {
+    font-size: 44px; 
+  }
+
+  .about-us p {
+    font-size: 20px; 
+  }
+
+  .about-us {
+    padding: 30px 10px;
+  }
+
+  .gallery .card-title {
+    font-size: 1.2rem;
+  }
+
+  .gallery .card-text {
+    font-size: 0.75rem;
+    -webkit-line-clamp: 3;
+  }
 }
 
 @media (max-width: 480px) {
@@ -303,27 +360,6 @@ html {
   .text2 .textBox p {
     font-size: 0.8em;
   }
-}
-@media (max-width: 576px) {
-  .nav-link::after {
-    display: none;
-  }
-
-  .gallery p {
-    font-size: 20px; 
-  }
-
-  .about-us h2 {
-    font-size: 44px; 
-  }
-
-  .about-us p {
-    font-size: 20px; 
-  }
-
-  .about-us {
-    padding: 30px 10px;
-  } 
 }
 
 @media (min-width: 992px) {
