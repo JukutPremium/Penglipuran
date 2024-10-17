@@ -17,6 +17,12 @@
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style/style.css" />
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./style/slider.css">
+
     <script src="js/preloader.js"></script>
   </head>
 
@@ -120,7 +126,7 @@
           <div class="col-lg-4 col-md-6 col-sm-6 col-12 mb-4" >
             <div class="card border-0">
               <div class="position-relative">
-                <img src="https://placehold.co/703x677" class="card-img-top" alt="Best Seller 1" />
+                <img src="assets/ngusaba.png" class="card-img-top" alt="Best Seller 1" />
                 <div class="card-img-overlay d-flex flex-column justify-content-end bg-dark bg-opacity-50 text-white p-3 overlay-hover">
                   <div class="d-flex flex-column align-items-center">
                    <h5 class="card-title">Ngusaba</h5>
@@ -135,7 +141,7 @@
           <div class="col-lg-4 col-md-6 col-sm-6 col-12 mb-4" >
             <div class="card border-0">
               <div class="position-relative">
-                <img src="https://placehold.co/703x677" class="card-img-top" alt="Best Seller 1"/>
+                <img src="assets/trimandala.png" class="card-img-top" alt="Best Seller 1"/>
                 <div class="card-img-overlay d-flex flex-column justify-content-end bg-dark bg-opacity-50 text-white p-3 overlay-hover">
                   <div class="d-flex flex-column align-items-center">
                     <h5 class="card-title">Tri Mandala</h5>
@@ -149,7 +155,7 @@
           <div class="col-lg-4 col-md-6 col-sm-6 col-12 mb-4" >
             <div class="card border-0">
               <div class="position-relative">
-                <img src="https://placehold.co/703x677" class="card-img-top" alt="Best Seller 1"/>
+                <img src="assets/angkul.png" class="card-img-top" alt="Best Seller 1"/>
                 <div class="card-img-overlay d-flex flex-column justify-content-end bg-dark bg-opacity-50 text-white p-3 overlay-hover">
                   <div class="d-flex flex-column align-items-center">
                     <h5 class="card-title">Angkul-Angkul</h5>
@@ -179,12 +185,10 @@
 
 
     <!-- FAQ Section -->
-    <section class="py-5 faq" style="background-color: #f8f9fa">
+    <section class="py-5 faq" style="background-color: #f8f9fa; margin-bottom: 35px;">
       <div class="container">
-        <h2 class="text-center mb-5 faq-margin" >Pertanyaan yang Sering Diajukan</h2>
+        <h2 class="text-center faq-margin" >Pertanyaan yang Sering Diajukan</h2>
         <div class="accordion" id="faqAccordion">
-
-          <!-- FAQ Item 1 -->
 
           <div class="accordion-item">
             <h2 class="accordion-header" id="headingTwo">
@@ -198,8 +202,6 @@
             </div>
           </div>
 
-          <!-- FAQ Item 2 -->
-
           <div class="accordion-item">
             <h2 class="accordion-header" id="headingThree">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"><b>Apakah ada alat transportasi?</b>
@@ -212,8 +214,6 @@
             </div>
           </div>
 
-          <!-- FAQ Item 3 -->
-
           <div class="accordion-item">
             <h2 class="accordion-header" id="headingFour">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour"><b>
@@ -225,6 +225,73 @@
                 Ya, Di Penglipuran Ada Restoran Dengan Nama Bamboo Cafe
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimoni Section -->
+
+    <section id="testimonials" class="testimonials-section">
+      <div class="container">
+        <h2 class="text-center mb-5" style="color: white;">Testimoni Pengunjung</h2>
+        <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+          <div class="carousel-inner">
+
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 text-center">
+                  <img src="https://lh3.googleusercontent.com/a/ACg8ocI1ZDojYJ8J0qa2YGOPFPhM_mgln0gk9_cajmdrrxLMn8A0qk4=w63-h63-p-rp-mo-ba5-br100" alt="Profile 1" class="rounded-circle mb-3 profile-img">
+                  <h5>All In</h5>
+                  <p>★★★★★</p>
+                  <p>Sesuai namanya desa paling bersih, dan untuk pengunjung jangan lupa nyobain sewa baju adat di sana untuk berfoto ala orang bali, tersedia hampir di setiap rumah dengan harga terjangkau, tiket juga murah"</p>
+                </div>
+    
+                <div class="col-lg-6 col-md-6 col-sm-12 text-center">
+                  <img src="https://lh3.googleusercontent.com/a-/ALV-UjV411G_MSuCrtY2uweuaCyK8LBDGwHqMpoGbwwM2xk7D9uI6nsB=w63-h63-p-rp-mo-ba5-br100" alt="Profile 2" class="rounded-circle mb-3 profile-img">
+                  <h5>Miranda D Noor</h5>
+                  <p>★★★★★</p>
+                  <p>"Daerah yg suasananya nyaman dan indah baik penduduknya serta lokasinya yg bersih dan tetap memegang adat dan agama. Wajib kunjungi tempat ini saat ke bali apalagi baru pertama kali. Makasy"</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 text-center">
+                  <img src="https://lh3.googleusercontent.com/a-/ALV-UjUBs3QhxL1simwpRxQtUuMg0PkreHJQATHOpERgbwiMvU_jWJkG=w63-h63-p-rp-mo-ba4-br100" alt="Profile 4" class="rounded-circle mb-3 profile-img">
+                  <h5>niken Bagus</h5>
+                  <p>★★★★★</p>
+                  <p>"PA beautiful place to escape from your routine. One day being a Balinese even just walk and take some photos and videos. You can rent the Balinese Kebaya in the houses for 50k complete with the sarong and accessories. I rent from the house number 30. The owner was so kind and friendly. You can buy food and beverages at the house as well while you enjoy the beauty of Balinese houses."</p>
+                </div>
+    
+                <div class="col-lg-6 col-md-6 col-sm-12 text-center">
+                  <img src="https://lh3.googleusercontent.com/a-/ALV-UjWnIlhSXU7JZNzu_6ifWOwGedExHOgzfJyV1WzqjzeVKfAueVCB=w63-h63-p-rp-mo-ba6-br100" alt="Profile 5" class="rounded-circle mb-3 profile-img">
+                  <h5>Pipiet harumsyah</h5>
+                  <p>★★★★★</p>
+                  <p>"Desa yg indah, asri tertata dan mempesona. Penduduknya ramah dan menjual makanan dan pernak pernik khas Bali. Dibelakang desa ada hutan bambu yg bersih dan bagus utk berfoto."</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 text-center">
+                  <img src="https://lh3.googleusercontent.com/a-/ALV-UjUSbQ84AHKH4PWEip-y08KlPLfVLAjOV0sQxTkWdMMiLC4-_orQ=w63-h63-p-rp-mo-ba4-br100" alt="Profile 7" class="rounded-circle mb-3 profile-img">
+                  <h5>Zintha Dewi Meintari</h5>
+                  <p>★★★★★</p>
+                  <p>"Salah satu tempat rekomendasi ketika berlibur dibali. Desanya benar-benar bersih, tatanannya sangat rapi, suasana ademnya bali bener² berasa."</p>
+                </div>
+    
+                <div class="col-lg-6 col-md-6 col-sm-12 text-center">
+                  <img src="https://lh3.googleusercontent.com/a-/ALV-UjVr4l1ymJidfP38kqhKCnrTJRUgbU_eAHa5WD0S_SBIEd1WjrF35g=w63-h63-p-rp-mo-br100" alt="Profile 8" class="rounded-circle mb-3 profile-img">
+                  <h5>Yuneska Yuneska</h5>
+                  <p>★★★★★</p>
+                  <p>"Salah satu yang harus dikunjungi saat ke Bali. Bisa cobain juga Baju adat Bali dengan harga terjangkau. Lebih baik berkunjung sore hari jam 4-6 saat tidak terlalu panas.dan sinar matahari nya bagu deh..desa tutup jam 6.30 sore ya. Semoga membantu"</p>
+                </div>
+              </div>
+            </div>
+    
           </div>
         </div>
       </div>
@@ -258,10 +325,12 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/anime.js"></script>
     <script src="./js/typed.js"></script>
     <script src="./js/jquery.js"></script>
     <script src="./js/index.js"></script>
+    <script src="./js/swiper.js"></script>
     <script>
       AOS.init();
     </script>

@@ -42,6 +42,15 @@
             background-color: #2a4e3a;
             border-color: #2a4e3a;
         }
+        .card-text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; 
+    -webkit-box-orient: vertical;
+    white-space: normal;
+}
+
     </style>
   </head>
 
@@ -116,30 +125,10 @@
         <div class="row">
             <div class="col-md-4 mb-4">
                 <div class="card">
-                    <img src="https://placehold.co/600x400" class="card-img-top" alt="Event 1">
+                    <img src="assets/acara.png" class="card-img-top" alt="Event 1">
                     <div class="card-body">
-                        <h5 class="card-title">Ngusaba Ceremony</h5>
-                        <p class="card-text">Annual village purification ceremony held in Penglipuran.</p>
-                        <a href="#" class="btn btn-primary">Learn More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <img src="https://placehold.co/600x400" class="card-img-top" alt="Event 2">
-                    <div class="card-body">
-                        <h5 class="card-title">Traditional Crafts Workshop</h5>
-                        <p class="card-text">Annual village purification ceremony held in Penglipuran.</p>
-                        <a href="#" class="btn btn-primary">Learn More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <img src="https://placehold.co/600x400" class="card-img-top" alt="Event 3">
-                    <div class="card-body">
-                        <h5 class="card-title">Penglipuran Village Festival</h5>
-                        <p class="card-text">Annual celebration showcasing local culture and traditions.</p>
+                        <h5 class="card-title">Penglipuran Village Festival XI</h5>
+                        <p class="card-text">Desa Penglipuran, Bali - Penglipuran Village Festival XI kembali digelar dengan semangat merayakan kekayaan budaya dan tradisi Bali yang unik. Festival tahunan ini berlangsung selama beberapa hari, menarik ribuan wisatawan lokal dan internasional yang ingin merasakan keindahan dan keaslian budaya Bali.</p>
                         <a href="#" class="btn btn-primary">Learn More</a>
                     </div>
                 </div>
@@ -183,40 +172,10 @@
     <script>
         const events = [
             {
-                title: "Ngusaba Ceremony",
-                description: "Annual village purification ceremony held in Penglipuran.",
-                image: "https://placehold.co/600x400",
-                category: "Religious"
-            },
-            {
-                title: "Traditional Crafts Workshop",
-                description: "Learn about Balinese crafts from local artisans.",
-                image: "https://placehold.co/600x400",
-                category: "Cultural"
-            },
-            {
-                title: "Penglipuran Village Festival",
-                description: "Annual celebration showcasing local culture and traditions.",
-                image: "https://placehold.co/600x400",
-                category: "Community"
-            },
-            {
-                title: "Balinese Dance Performance",
-                description: "Experience traditional Balinese dances performed by local artists.",
-                image: "https://placehold.co/600x400",
-                category: "Traditional"
-            },
-            {
-                title: "Community Clean-up Day",
-                description: "Join locals in keeping Penglipuran clean and beautiful.",
-                image: "https://placehold.co/600x400",
-                category: "Community"
-            },
-            {
-                title: "Galungan Celebration",
-                description: "Witness the Balinese Hindu celebration of good triumphing over evil.",
-                image: "https://placehold.co/600x400",
-                category: "Religious"
+                title: "Penglipuran Village Festival XI",
+                description: "Desa Penglipuran, Bali - Penglipuran Village Festival XI kembali digelar dengan semangat merayakan kekayaan budaya dan tradisi Bali yang unik. Festival tahunan ini berlangsung selama beberapa hari, menarik ribuan wisatawan lokal dan internasional yang ingin merasakan keindahan dan keaslian budaya Bali.",
+                image: "assets/acara.png",
+                category: "Not Upcomming"
             }
         ];
 
