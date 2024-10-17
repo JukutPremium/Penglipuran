@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
   var welcomeTyped = new Typed("#welcome", {
-    strings: ['— WELCOME —'],
-    typeSpeed: 200,
+    strings: ['— Selamat Datang —'],
+    typeSpeed: 75,
     backSpeed: 150,
     showCursor: false,
     loop: false,
